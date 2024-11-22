@@ -29,7 +29,8 @@ function handleSubmit(event) {
         position: 'topRight',
         color: '#59A10D',
         messageColor: '#fff',
-        iconUrl: '../img/ok.svg',
+        icon: 'img',
+        iconUrl: '../img/ok.png',
         iconColor: '#ffffff',
       });
     })
@@ -41,7 +42,8 @@ function handleSubmit(event) {
         position: 'topRight',
         color: '#EF4040',
         messageColor: '#fff',
-        iconUrl: '../img/error.svg',
+        icon: 'img',
+        iconUrl: '../img/error.png',
         iconColor: '#ffffff',
       });
     });
