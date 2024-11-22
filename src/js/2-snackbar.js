@@ -23,28 +23,18 @@ function handleSubmit(event) {
   promise
     .then(delay => {
       iziToast.show({
-        title: 'OK',
-        titleColor: '#ffffff',
-        message: `Fulfilled promise in ${delay}ms`,
+        message: `&#x2714; Fulfilled promise in ${delay}ms`,
         position: 'topRight',
         color: '#59A10D',
         messageColor: '#fff',
-        icon: 'img',
-        iconUrl: '/img/ok.png',
-        iconColor: '#ffffff',
       });
     })
     .catch(delay => {
       iziToast.show({
-        title: 'Error',
-        titleColor: '#ffffff',
-        message: `Rejected promise in ${delay}ms`,
+        message: `&#x2716; Rejected promise in ${delay}ms`,
         position: 'topRight',
         color: '#EF4040',
         messageColor: '#fff',
-        icon: 'img',
-        iconUrl: '/img/error.png',
-        iconColor: '#ffffff',
       });
     });
 

@@ -2,7 +2,6 @@ import flatpickr from 'flatpickr';
 import 'flatpickr/dist/flatpickr.min.css';
 import iziToast from 'izitoast';
 import 'izitoast/dist/css/iziToast.min.css';
-import errorIcon from '../../public/error.svg';
 
 let userSelectedDate = null;
 const startButton = document.querySelector('button[data-start]');
@@ -41,11 +40,10 @@ const options = {
     ///validation
     if (selectedDates[0].getTime() <= Date.now()) {
       iziToast.show({
-        message: 'Please choose a date in the future',
+        message: '&#x2716; Please choose a date in the future',
         position: 'topRight',
         color: '#EF4040',
         messageColor: '#fff',
-        iconUrl: errorIcon,
       });
       startButton.disabled = true;
       return;
