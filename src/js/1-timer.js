@@ -2,6 +2,7 @@ import flatpickr from 'flatpickr';
 import 'flatpickr/dist/flatpickr.min.css';
 import iziToast from 'izitoast';
 import 'izitoast/dist/css/iziToast.min.css';
+import errorIcon from '../../public/error.svg';
 
 let userSelectedDate = null;
 const startButton = document.querySelector('button[data-start]');
@@ -44,8 +45,7 @@ const options = {
         position: 'topRight',
         color: '#EF4040',
         messageColor: '#fff',
-        icon: 'img',
-        iconUrl: '/img/error.png',
+        iconUrl: errorIcon,
       });
       startButton.disabled = true;
       return;
