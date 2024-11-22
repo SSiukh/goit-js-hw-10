@@ -45,7 +45,7 @@ const options = {
         color: '#EF4040',
         messageColor: '#fff',
         icon: 'img',
-        iconUrl: '../img/error.png',
+        iconUrl: './img/error.png',
       });
       startButton.disabled = true;
       return;
