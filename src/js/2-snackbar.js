@@ -30,7 +30,7 @@ function handleSubmit(event) {
         color: '#59A10D',
         messageColor: '#fff',
         icon: 'img',
-        iconUrl: './img/ok.png',
+        iconUrl: '/img/ok.png',
         iconColor: '#ffffff',
       });
     })
@@ -43,7 +43,7 @@ function handleSubmit(event) {
         color: '#EF4040',
         messageColor: '#fff',
         icon: 'img',
-        iconUrl: './img/error.png',
+        iconUrl: '/img/error.png',
         iconColor: '#ffffff',
       });
     });
